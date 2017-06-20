@@ -12,7 +12,7 @@ goto :eof
 :builduwp
 echo Building NodeRT UWP adapter for %1
 pushd uwp\%1
-call node-gyp rebuild --target=0.35.6 --arch=%1 --dist-url=https://atom.io/download/electron --msvs_version=2015 %2
+call node-gyp rebuild --msvs_version=2015 %2
 if errorlevel 1 exit
 echo.
 popd
