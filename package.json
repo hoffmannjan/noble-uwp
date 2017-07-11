@@ -4,7 +4,7 @@
 	"description": "Noble (Node.js Bluetooth LE) with Windows 10 UWP bindings",
 	"main": "index.js",
 	"scripts": {
-		"install": "build.cmd",
+		"install": "install.cmd",
 		"compile": "babel --presets es2015 -d lib/ src/",
 		"prepublish": "npm run compile"
 	},
